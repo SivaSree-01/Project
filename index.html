@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+        <h3>Total Salary: $<span id="salary">0</span></h3>
+        <h3>Remaining Balance: $<span id="balance">0</span></h3>
+        <input type="number" id="salaryInput" placeholder="Enter Your Salary">
+        <button onclick="setSalary()">Set Salary</button>
+        <input type="text" id="desc" placeholder="Enter Description">
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <button onclick="addTransaction()">Add Transaction</button>
+        <ul id="transactions"></ul>
+    </div>
+    <script src="pro.js"></script>
+</body>
+</html>
