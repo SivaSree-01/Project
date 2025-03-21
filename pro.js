@@ -24,7 +24,7 @@ function addTransaction() {
     }
 
     const li = document.createElement('li');
-    li.innerHTML = `${desc} <span class="expense">$${amount}</span>`;
+    li.innerHTML = `${desc} <span class="expense">₹${amount}</span>`;
     document.getElementById('transactions').appendChild(li);
 
     document.getElementById('desc').value = '';
