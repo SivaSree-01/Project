@@ -19,7 +19,8 @@ function addTransaction() {
     document.getElementById('balance').innerText = balance;
 
     if (balance < 0) {
-        alert("Warning: Your expenses exceed your salary!");
+        document.getElementById("warning").innerText = "Warning: Your expenses exceed your salary!";
+        document.getElementById("warning").style.color = "red";
     }
 
     const li = document.createElement('li');
